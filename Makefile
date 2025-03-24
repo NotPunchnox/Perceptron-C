@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Werror -I./include
 
-SRC = src/main.c src/sigmoid.c
+SRC = src/*.c
 OBJ = $(SRC:.c=.o)
 EXEC = bin/perceptron
 
