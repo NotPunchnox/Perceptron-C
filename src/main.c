@@ -36,6 +36,15 @@ void train(double input1, double input2, double target, double *w1, double *w2, 
 }
 
 int main(int argc, char *argv[]) {
+
+    // Initialiser le nombre d'étapes d'entrainement
+    double train_epochs = 10000;
+
+    // Possibilité de choisir le nombre d'étapes d'entrainement
+    if(argc >= 1) {
+        train_epochs = atoi(argv[1]);
+    }
+
     // Initialisation des variables ( random )
     srand(time(NULL));
 
@@ -57,7 +66,7 @@ int main(int argc, char *argv[]) {
     double targets[4] = {0.0, 1.0, 1.0, 0.0};
 
     // Entraînement du perceptron (x10000)
-    for (int epoch = 0; epoch < 10000; epoch++) {
+    for (int epoch = 0; epoch < train_epochs; epoch++) {
         for (int i = 0; i < 4; i++) {
             // Entraînement avec toutes les données
             train(inputs[i][0], inputs[i][1], targets[i], &w1, &w2, &bias, learning_rate);
