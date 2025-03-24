@@ -35,7 +35,7 @@ void train(double input1, double input2, double target, double *w1, double *w2, 
     *bias += learning_rate * error_u;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
     // Initialisation des variables ( random )
     srand(time(NULL));
 

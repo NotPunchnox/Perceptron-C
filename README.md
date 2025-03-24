@@ -75,5 +75,13 @@ Le programme comprend les éléments suivants :
         ```
     > Windows:
         ```bash
-        ./bin/perceptron
+        ./bin/perceptron.exe
         ```
+
+## Exemple de sortie:
+```bash
+Entrée: 0.0, 0.0 | Sortie prédite: 0.0023
+Entrée: 0.0, 1.0 | Sortie prédite: 0.9876
+Entrée: 1.0, 0.0 | Sortie prédite: 0.9877
+Entrée: 1.0, 1.0 | Sortie prédite: 0.0121
+```
