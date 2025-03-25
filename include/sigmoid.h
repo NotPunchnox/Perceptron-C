@@ -1,8 +1,8 @@
-#ifndef HELLO_H
-#define HELLO_H
+#ifndef SIGMOID_H
+#define SIGMOID_H
 
-double sigmoid(double a);
+extern double sigmoid(double);
 
-double sigmoid_deriv(double a);
+extern double sigmoid_deriv(double);
 
 #endif

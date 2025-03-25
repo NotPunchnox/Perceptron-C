@@ -37,7 +37,7 @@ void train(double input1, double input2, double target, double *w1, double *w2, 
 int main(int argc, char *argv[]) {
 
     // Initialiser le nombre d'étapes d'entrainement
-    double train_epochs = 10000;
+    int train_epochs = 10000;
 
     // Possibilité de choisir le nombre d'étapes d'entrainement
     if(argc >= 1) {
